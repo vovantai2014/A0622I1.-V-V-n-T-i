@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eaa69f4-d7fe-41bb-bef4-688a518528e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/module1/ss3_pseudocode/bai_tap/SS3.Psedocode.Flowchat.docx" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss3_pseudocode/bai_tap/SS3.Psedocode.Flowchat.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss3_pseudocode/bai_tap/~$3.Psedocode.Flowchat.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +26,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -34,6 +43,8 @@
       <option name="presentableId" value="Default" />
       <updated>1657110821893</updated>
       <workItem from="1657110823365" duration="73000" />
+      <workItem from="1657111214529" duration="827000" />
+      <workItem from="1657112064991" duration="332000" />
     </task>
     <servers />
   </component>
