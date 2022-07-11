@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eaa69f4-d7fe-41bb-bef4-688a518528e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_so_thich.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/luyen_tap_form_table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/thuc_hanh/form_tim_kiem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/thuc_hanh/simpleform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_dang_ky_hoc_vien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_so_thich.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_so_thich.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +82,9 @@
       <workItem from="1657305639180" duration="129000" />
       <workItem from="1657305808858" duration="33000" />
       <workItem from="1657305857721" duration="96000" />
+      <workItem from="1657336121142" duration="7512000" />
+      <workItem from="1657505731324" duration="8050000" />
+      <workItem from="1657513943548" duration="92000" />
     </task>
     <servers />
   </component>
