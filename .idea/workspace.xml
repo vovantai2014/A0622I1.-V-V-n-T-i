@@ -19,32 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eaa69f4-d7fe-41bb-bef4-688a518528e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/event_onclick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_co_vua_lan2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_lich_t10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/tao_form_table_don_gian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/thuc_hanh/Copy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/aa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/event_onchange.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/event_onclick.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/hien_thi_dau_ra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/show_mes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/caculator_bro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/diemtb_tongdiem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/ung_dung_may_tinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/caculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/caculator_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/de_mo_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/dien_tich_hcn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/khai_bao_su_dung_bien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/phep_cong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/luyen_tap_form_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/luyen_tap_form_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_ban_co_vua.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_ban_co_vua.html" afterDir="false" />
-    </list>
+    <list default="true" id="5eaa69f4-d7fe-41bb-bef4-688a518528e1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +91,7 @@
       <workItem from="1657891833382" duration="2518000" />
       <workItem from="1657978783593" duration="1998000" />
       <workItem from="1657981513940" duration="14609000" />
-      <workItem from="1658132625527" duration="1561000" />
+      <workItem from="1658132625527" duration="2062000" />
     </task>
     <servers />
   </component>
