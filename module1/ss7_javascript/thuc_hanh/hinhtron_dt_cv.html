@@ -8,18 +8,18 @@
 
 <p id="demo"></p>
 <script>
-    var pi=3.14159;
+    const PI=3.14159;
     var r;
-    function dienTich(pi,r) {
-        return (pi*r*r);
+    function dienTich(PI,r) {
+        return (PI*r*r);
     }
-    function Chuvi(pi,r) {
-        return (2*r*pi);
+    function Chuvi(PI,r) {
+        return (2*r*PI);
 
     }
     var a = parseInt(prompt("Nhập bán kính hình tròn : "));
-    document.write("<p style='color: red'>Diện tích hình tròn là : " + (a*a*pi));
-    document.getElementById("demo").innerHTML = " Chu vi hình tròn là : " + (2*a*pi);
+    document.write("<p style='color: red'>Diện tích hình tròn là : " + (a*a*PI));
+    document.getElementById("demo").innerHTML = " Chu vi hình tròn là : " + (2*a*PI);
 </script>
 </body>
 </html>
