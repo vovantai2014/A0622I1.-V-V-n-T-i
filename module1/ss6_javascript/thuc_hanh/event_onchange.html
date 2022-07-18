@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event onchange</title>
+    <style>
+        .font1{
+            size: 60px;
+            color: orange;
+        }
+        .font2{
+            size: 100px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p class="font1"> Chọn Tên Xe Từ Danh Sách</p>
+<select id="mySelect" onchange="myFunction()">
+    <option value="BW"> Xe BW
+    <option value="Mercedes"> Xe Mercedes Benz
+    <option value="Toyota"> Xe Toyota
+    <option value="HyunDai"> Xe Hyundai
+</select>
+<p class="font2">Khi bạn chuyển sang một xe mới, một hàm sẽ được kích hoạt để hiển thị giá trị ra ngoài.</p>
+
+<p id="demo"></p>
+<script>
+    function myFunction() {
+    let x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "Bạn đã chọn loại xe: " + x;
+    }
+</script>
+</body>
+</html>

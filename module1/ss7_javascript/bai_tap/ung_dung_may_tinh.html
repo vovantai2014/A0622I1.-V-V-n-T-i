@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="firstNumber">
+<input type="text" id="secondNumber">
+<br>
+<br>
+<button type="button" onclick="sum()">Addition (+)</button>
+<button type="button" onclick="sub()">Subtraction (-)</button>
+<button type="button" onclick="mul()">Multyplication (*)</button>
+<button type="button" onclick="div()">Division (/)</button>
+</body>
+<p id="tinh"></p>
+<script>
+    function sum() {
+        let a = Number(document.getElementById("firstNumber").value);
+        let b = Number(document.getElementById("secondNumber").value);
+        let sum = a + b;
+        document.getElementById("tinh").innerHTML = " Result Addition:    " + sum;
+    }
+    function sub() {
+        let a = Number(document.getElementById("firstNumber").value);
+        let b = Number(document.getElementById("secondNumber").value);
+        let sub = a - b;
+        document.getElementById("tinh").innerHTML = "Result Subtraction:    " + sub;
+    }
+    function mul() {
+        let a = Number(document.getElementById("firstNumber").value);
+        let b = Number(document.getElementById("secondNumber").value);
+        let mul = a * b;
+        document.getElementById("tinh").innerHTML = "Result Multyplication:   " + mul;
+    }
+    function div() {
+        let a = Number(document.getElementById("firstNumber").value);
+        let b = Number(document.getElementById("secondNumber").value);
+        let div = a / b;
+        document.getElementById("tinh").innerHTML = "Result Divison:   " + div;
+
+    }
+</script>
+</html>

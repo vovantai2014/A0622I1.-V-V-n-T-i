@@ -20,10 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eaa69f4-d7fe-41bb-bef4-688a518528e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_dang_ky_hoc_vien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/event_onclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_co_vua_lan2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_lich_t10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/tao_form_table_don_gian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/thuc_hanh/Copy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/event_onchange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/event_onclick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/hien_thi_dau_ra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss6_javascript/thuc_hanh/show_mes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/caculator_bro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/diemtb_tongdiem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/bai_tap/ung_dung_may_tinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/caculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/caculator_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/de_mo_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/dien_tich_hcn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/khai_bao_su_dung_bien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/ss7_javascript/thuc_hanh/phep_cong.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_so_thich.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_so_thich.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/form_lay_servey_khach_hang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/luyen_tap_form_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/luyen_tap_form_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_ban_co_vua.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss5_html_form_table/bai_tap/table_nang_cao_ban_co_vua.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -85,6 +106,17 @@
       <workItem from="1657336121142" duration="7512000" />
       <workItem from="1657505731324" duration="8050000" />
       <workItem from="1657513943548" duration="92000" />
+      <workItem from="1657514622017" duration="7532000" />
+      <workItem from="1657538751400" duration="750000" />
+      <workItem from="1657539623929" duration="9389000" />
+      <workItem from="1657554741263" duration="2994000" />
+      <workItem from="1657710095009" duration="10433000" />
+      <workItem from="1657783874918" duration="5289000" />
+      <workItem from="1657806734730" duration="8338000" />
+      <workItem from="1657891833382" duration="2518000" />
+      <workItem from="1657978783593" duration="1998000" />
+      <workItem from="1657981513940" duration="14609000" />
+      <workItem from="1658132625527" duration="1561000" />
     </task>
     <servers />
   </component>
@@ -102,5 +134,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1657789855353">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1657789855353" />
   </component>
 </project>

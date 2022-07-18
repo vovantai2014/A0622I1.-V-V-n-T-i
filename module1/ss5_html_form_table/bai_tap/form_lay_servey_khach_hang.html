@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>FORM LAY SURVEY KHACH HANG</title>
+    <style>
+        .textarea{
+            width: 100%;
+            height: 80px;
+            border-color: red;
+        }
+        .body{
+            margin: 30px;
+        }
+        .margin{
+            margin: 20px;
+        }
+        .td{
+            text-align: left;
+            margin-left:3cm;
+        }
+
+    </style>
 </head>
-<body>
+<body class="body">
 <form>
     <h3> Maket Research Survey</h3>
     <p>Please take a few moments to complete this saticfaction servry</p>
     <label style="font: bold"> What is your age range?</label><br>
     <select style="width: 5cm">
+        <option value="">--Do Tuoi--</option>
         <option value=""> 18 - 24 </option>
         <option value=""> 25 - 34 </option>
         <option value=""> 34 - 50 </option>
@@ -18,6 +37,7 @@
     <br><br>
     <label style="font: bold"> What is your yearly income range?</label><br>
     <select style="width: 5cm">
+        <option value="">--Tong Thu Nhap--</option>
         <option value=""> $0 - $25,000</option>
         <option value=""> $25,001 - $50,000 </option>
         <option value=""> $50,001 - $100,000</option>
@@ -45,20 +65,20 @@
     $<input type="text" style="width: 2cm"/> . <input type="text" style="width: 1cm"/><br>
     <a style="font-size: small">&nbsp;&nbsp; Dollars</a><a style="font-size: small"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Cents</a>
     <br><br>
-    <label style="font-family: bold"> What features would you like to see in the new product.</label><br>
-    <input type="text" style="width: 80%">
+   <label style="font-family: bold"> What features would you like to see in the new product.</label><br>
+    <textarea class="textarea" maxlength="500"> - Nhập memo-</textarea>
     <br><br>
     <label style="font: bold"> Please rate your lavel of agreement with the following statements. </label><br>
     <table border="1"  style="width: 80%" cellspacing="0" cellpadding="0">
         <tr bgcolor="#e6e6fa">
             <th> </th>
-            <th> Strongly Disagree </th>
-            <th> Disagree </th>
-            <th> Agree </th>
-            <th> Strongly Agree </th>
+            <th class="margin"> Strongly Disagree </th>
+            <th class="margin"> Disagree </th>
+            <th class="margin"> Agree </th>
+            <th class="margin"> Strongly Agree </th>
         </tr>
         <tr>
-            <td> Our products are price fairly</td>
+            <td class="td" id="td"><pre>  Our products are price fairly</pre> </td>
             <td style="text-align: center"> <input type="radio" name="table1" value="1" id="table1"><br>1</td>
             <td style="text-align: center"> <input type="radio" name="table1" value="2" id="table1"><br>2</td>
             <td style="text-align: center"> <input type="radio" name="table1" value="3" id="table1"><br>3</td>
@@ -83,5 +103,5 @@
         <input type="submit" style="color: blue" value="SUBMIT" formmethod="get"> </input>
 
 </form>
-</bod
+</body>
 </html>

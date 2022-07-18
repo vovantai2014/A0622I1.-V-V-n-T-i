@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    var pi=3.14159;
+    var r;
+    function dienTich(pi,r) {
+        return (pi*r*r);
+    }
+    function Chuvi(pi,r) {
+        return (2*r*pi);
+
+    }
+    var a = parseInt(prompt("Nhập bán kính hình tròn : "));
+    document.write("<p style='color: red'>Diện tích hình tròn là : " + (a*a*pi));
+    document.getElementById("demo").innerHTML = " Chu vi hình tròn là : " + (2*a*pi);
+</script>
+</body>
+</html>

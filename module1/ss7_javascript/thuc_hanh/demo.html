@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    ​
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="text" id="xuat">
+<p id="ketQua">Kết quả</p>
+<button onclick="alert('hello');">Click1</button>
+<button onclick="change()">Click2</button>
+<script>
+    // hàm hiện thị 1 hộp thoại
+    // alert("hello A06");
+    // console.log("hello codegym");
+    // document.write("Goodbye");
+    // hiện theo text
+    // document.getElementById("ketQua").innerText="<button>nút</button>";
+    // hiện thị theo định dạng html
+    // document.getElementById("ketQua").innerHTML="<button>nút</button>";
+    function change() {
+        // nhập dữ liệu từ thể input
+        let a = document.getElementById("nhap").value;
+        // nhập dữ liệu từ hàm prompt
+        let b = prompt("Nhập vào một chuỗi 2");
+        // hộp thoại thông báo để xác nhận
+        let c = confirm("Bạn có muộn công 2 chuôi không? ");
+        if (c==true){
+            // hiện thị lên thẻ html
+            document.getElementById("ketQua").innerText = a+b;
+            document.getElementById("nhap").value = a+b;
+        }else {
+            document.getElementById("ketQua").innerText = a;
+            document.getElementById("nhap").value = a;
+            document.getElementById("nhap").value = a;
+            document.getElementById("nhap").value = a;
+        }
+        // hộp thoại hiện thị thông tin
+        alert("chương trình kết thúc")
+​
+    }
+</script>
+​
+</body>
+<script src="myjs.js"></script>
+</html>
