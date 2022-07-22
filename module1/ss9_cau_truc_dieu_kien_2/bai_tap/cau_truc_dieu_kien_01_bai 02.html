@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Nhập số tuổi của học sinh: </p>
+<input type="number" id="tuoi"><br><br>
+<button type="button" onclick="check()"> CHECK</button>
+<p id="demo"></p>
+<script>
+    function check() {
+        let age = document.getElementById("tuoi").value;
+        if (age < 15) {
+            document.getElementById("demo").innerHTML = " Học sinh này chưa đủ tuổi học lớp 10";
+        } else if (age==15) {
+            document.getElementById("demo").innerHTML = " Học sinh này đang học lớp 10";
+        } else {
+            document.getElementById("demo").innerHTML = " Đã học xong lớp 10";
+        }
+    }
+</script>
+</body>
+</html>

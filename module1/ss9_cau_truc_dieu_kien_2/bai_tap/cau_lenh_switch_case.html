@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="thang">
+<button type="button" onclick="change()">Tính Số Ngày</button>
+<p id="demo"></p>
+</body>
+<script>
+    function change() {
+        let month = document.getElementById("thang").value;
+        switch (month) {
+            case '1':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '2':
+                document.getElementById("demo").innerHTML = " Tháng có 28 hoặc 29 ngày";
+                break;
+            case '3':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '4':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 30 ngày';
+                break;
+            case '5':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '6':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 30 ngày';
+                break;
+            case '7':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '8':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '9':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 30 ngày';
+                break;
+            case '10':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            case '11':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 30 ngày';
+                break;
+            case '12':
+                document.getElementById("demo").innerHTML = 'Tháng'  + month +  'có 31 ngày';
+                break;
+            default :
+                document.getElementById('demo').innerHTML = 'Nhập lại tháng (từ 1-12)';
+
+        }
+    }
+</script>
+</html>

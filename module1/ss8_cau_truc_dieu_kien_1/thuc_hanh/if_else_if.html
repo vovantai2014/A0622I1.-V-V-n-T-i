@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let userName = prompt('Input name: ');
+    if (userName == 'Admin') {
+        alert('Input pass.....');
+    } else if (userName == null) {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
+    let pass = prompt('Input password: ');
+    if(pass == 'TheMaster'){
+        alert('Welcom Admin login!');
+    }else if(pass == null){
+        alert('Canceled');
+    }else{
+        alert('Wrong pass');
+    }
+</script>
+</body>
+</html>

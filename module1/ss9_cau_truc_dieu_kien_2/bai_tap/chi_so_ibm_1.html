@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="weight"> Nhập cân nặng</input></br></br>
+<input type="text" id="height"> Nhập chiều cao (đơn vị cm) </input></br></br>
+<button type="button" onclick="change()">-IBM-</button>
+<p id="demo"></p>
+<script>
+    function change() {
+        let a = document.getElementById('weight').value;
+        let b = document.getElementById('height').value;
+        let ibm = (a/(b/100*b/100));
+        if (ibm < 18.0){
+            document.getElementById('demo').innerHTML = 'Body Underweight';
+        }else if(ibm < 25.0){
+            document.getElementById('demo').innerHTML = 'Body Normal';
+        }else if(ibm < 30.0){
+            document.getElementById('demo').innerHTML = 'Body Overweight';
+        }else {
+            document.getElementById('demo').innerHTML = 'Body Obese';
+        }
+    }
+</script>
+</body>
+</html>

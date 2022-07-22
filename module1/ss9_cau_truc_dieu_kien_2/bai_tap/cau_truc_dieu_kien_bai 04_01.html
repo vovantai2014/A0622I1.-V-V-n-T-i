@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Nhập số thứ nhất: </p>
+<input type="text" id="numberOne">
+<p> Nhập số thứ hai: </p>
+<input type="text" id="numberTwo">
+<p>Nhập số thứ ba:</p>
+<input type="text" id="numberTree"><br><br>
+<button type="button" id="compare" onclick="check()"> CHECK MAXNUMBER</button>
+<p id="demo"></p>
+<script>
+    function check() {
+        let a = document.getElementById("numberOne").value;
+        let b = document.getElementById("numberTwo").value;
+        let c = document.getElementById("numberTree").value;
+        let max = a;
+        if(max<b){
+            max = b;
+        }if(max<c){
+            max = c;
+        }
+        document.getElementById("demo").innerHTML = "max là :"+max;
+    }
+</script>
+</body>
+</html>

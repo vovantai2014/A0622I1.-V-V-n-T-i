@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let permanent = 30000; //tiền thue bao cố định mỗi tháng
+    let minutes = prompt("Nhập tổng số phút đã gọi trong tháng ");
+    let sum1;
+    let sum2;
+    let sum3;
+    if(minutes<=50) {
+        sum1 = (permanent+minutes*600);
+        alert("Cước điện thoại tháng này là :" + sum1 + "vnđ");//50 phút trở xuống giá 600vnđ/ phút
+    } else if(50<minutes && minutes<=200){
+        sum2 = (minutes - 50)*400;
+        alert("Cước điện thoại tháng này là :" + (60000 + sum2) + "vnđ");// phút 51 đến phút 200 giá 400vnđ/ phút
+
+    }else{
+        sum3 = (minutes -200)*200;
+        alert("Cước điện thoại tháng này là :" +(120000 + sum3) + "vnđ");// từ phút 201 trở đi giá 200 vnđ/ phút
+    }
+</script>
+</body>
+</html>

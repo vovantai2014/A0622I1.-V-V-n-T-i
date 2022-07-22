@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CACULATOR</title>
+    <STYLE>
+        .table{
+            padding:10px;
+            width: 150px;
+            height: 170px;
+            border-color: black;
+
+        .text{
+            border-color: antiquewhite;
+        }
+        }
+        .button{
+            width: 27px;
+            height: 22px;
+            text-align: center;
+            color: blue;
+        }
+    </STYLE>
+</head>
+<body>
+<table class="table">
+    <tr>
+        <td colspan="4" ><input class="text" type="text" id="result" disabled> </td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="1" onclick="display('1')"></td>
+        <td><input class="button" type="button" value="2" onclick="display('2')"></td>
+        <td><input class="button" type="button" value="3" onclick="display('3')"></td>
+        <td><input class="button" type="button" value="+" onclick="display('+')"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="4" onclick="display('4')"></td>
+        <td><input class="button" type="button" value="5" onclick="display('5')"></td>
+        <td><input class="button" type="button" value="6" onclick="display('6')"></td>
+        <td><input class="button" type="button" value="-" onclick="display('-')"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="7" onclick="display('7')"></td>
+        <td><input class="button" type="button" value="8" onclick="display('8')"></td>
+        <td><input class="button" type="button" value="9" onclick="display('9')"></td>
+        <td><input class="button" type="button" value="X" onclick="display('*')"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="C" onclick="deleteText()"></td>
+        <td><input class="button" type="button" value="0" onclick="display('0')"></td>
+        <td><input class="button" type="button" value="=" onclick="caculator()"></td>
+        <td><input class="button" type="button" value="/" onclick="display('/')"></td>
+    </tr>
+</body>
+<script>
+    function display(value) {
+        document.getElementById('result').value += value;
+    }
+    function deleteText() {
+        document.getElementById('result').value = null;
+    }
+    function caculator() {
+    let a = document.getElementById('result').value;
+    let b = eval(a);
+    document.getElementById('result').value = b;
+    }
+</script>
+</html>

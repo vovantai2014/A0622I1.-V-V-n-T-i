@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Nhap So a: </p>
+<input type="text" id="numberOne"><br>
+<p> Nhap so b:</p>
+<input type="text" id="numberTwo"><br><br>
+<button type="button" onclick="display()" value="DISPLAY">DISPLAY</button>
+<p id="xuLy"></p>
+<script>
+    function display(){
+    let a = document.getElementById("numberOne").value;
+    let b = document.getElementById("numberTwo").value;
+    let c = a%b;
+    if(c == 0){
+        document.getElementById("xuLy").innerHTML = +a + "chia het cho" +b;
+    }else{
+        document.getElementById("xuLy").innerHTML = +a + "khong chia het cho" +b;
+    }
+    }
+</script>
+</body>
+</html>
