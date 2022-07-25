@@ -6,17 +6,20 @@
 </head>
 <body>
 <script>
-    let a = prompt(" Nhập điểm bài kiểm tra.");
-    let b = prompt(" Nhập điểm thi giữa kỳ.");
-    let c = prompt(" Nhập điểm thi cuối kỳ.");
-    let average = (a+b+c)/3;
+    let a = parseInt(prompt(" Nhập điểm bài kiểm tra."));
+    let b = parseInt(prompt(" Nhập điểm thi giữa kỳ."));
+    let c = parseInt(prompt(" Nhập điểm thi cuối kỳ."));
+    let average = (Number(a)+Number(b)+Number(c)*2)/4;
     if(average>=8.0){
         alert("Học sinh giỏi");
-    }else if(average>=6.5 && average<7.9){
+    }
+    else if(average>=6.5 && average<7.9){
         alert("Học sinh khá");
-    }else if(average>=5 && average<6.5){
+    }
+    else if(average>=5 && average<6.5){
         alert("Học sinh trung bình");
-    }else{
+    }
+    else{
         alert("Học sinh yếu");
     }
 </script>

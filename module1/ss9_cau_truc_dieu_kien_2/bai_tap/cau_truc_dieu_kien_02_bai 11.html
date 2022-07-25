@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Tổng thu nhập mỗi tháng: "));
+    let b = parseInt(prompt("Nhập số người phụ thuộc :"));
+    let thNhapChiuThue = (a - 11000000) - (b*4400000);
+    if (thNhapChiuThue<=0){
+        alert("Bạn không phải nộp thuế TNCN :");
+    }else{
+        alert("Thuế TNCN phải nộp là: " + (thNhapChiuThue*0.05) + "vnđ");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập hệ số a: "));
+    let b = parseInt(prompt("Nhập hệ số b: "));
+    let c = parseInt(prompt("Nhập hệ số c: "));
+    if(a==0){
+        alert("Trở thành phương trình bậc nhất");
+    }else{
+        let delTa = b*b - (4*a*c);
+        if(delTa<0){
+            alert("Phương trình vô nghiệm");
+        }
+        else if(delTa==0){
+            alert("Phương trình có nghiệm kép" + (-b/a));
+        }
+        else{
+            alert("Phương trình có nghiệm thứ nhất là: " +(-b + Math.sqrt(delTa))/(2*a));
+            alert("Phương trình có nghiệm thứ hai là: " +(-b - Math.sqrt(delTa))/(2*a));
+        }
+    }
+</script>
+</body>
+</html>

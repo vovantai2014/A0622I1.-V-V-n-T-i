@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt(" Nhập số kw/h đã sử dụng trong tháng"));
+    if (0<a<=50){
+        alert("Tiền điện của tháng này là: " + (a*1600) + "vnđ"); // 1-50 kw giá 1600
+    }else if(50<a<=100){
+        alert("Tiền điện của tháng này là: "+ ((a-50)*2000 + 80000) + "vnd");// từ 51-100 kw giá 2000
+    }else{
+        alert("Tiền điện của tháng này là :" + (180000 + (a-100)*2500) + "vnđ"); // từ 101 kw giá 2500
+    }
+</script>
+</body>
+</html>

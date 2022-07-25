@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập cạnh a của tam giác:"));
+    let b = parseInt(prompt("Nhập cạnh b của tam giác:"));
+    let c = parseInt(prompt("Nhập cạnh c của tam giác:"));
+    if(a<=0 || b<=0 || c<=0){
+        alert("Không phải là các cạnh của tam giác");
+    }else if(a+b>c && a+c>b && b+c>a){
+        alert(" 3 số vừa nhập" + a +b +c +'là 3 cạnh của tam giác');
+    }else{
+        alert(" 3 số vừa nhập" +a +b +c +"Không phải là 3 cạnh của tam giác");
+    }
+</script>
+</body>
+</html>

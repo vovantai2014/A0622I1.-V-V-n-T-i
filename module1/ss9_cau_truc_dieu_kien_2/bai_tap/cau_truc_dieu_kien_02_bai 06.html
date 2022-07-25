@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào hệ số a của phương trình"));
+    let b = parseInt(prompt("Nhập vào hệ số b của phương trình"));
+    let x;
+    if(a==0 && b!=0){
+        alert(" Phương trình vô nghiệm");
+    }
+    else if(a==0 && b==0){
+        alert(" Phương trình vô số nghiêm;");
+    }else if(a!=0 && b==0){
+        x = 0;
+        alert("Nghiệm của phương trình là:" +x);
+    }else{
+        x = (-b/a);
+        alert("Nghiệm của phương trình là: "+x);
+    }
+</script>
+</body>
+</html>
