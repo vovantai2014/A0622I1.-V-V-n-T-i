@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let fiBo;
+    let sum = 0;
+    for (let i =0; i<20; i++){
+        fiBo= a+b;
+        a=b;
+        b=fiBo;
+        sum = a+b+fiBo;
+    }
+    document.write('Tổng 20 số đầu tiên trong dãy Fibo là:' +sum + '<br>');
+</script>
+</body>
+</html>

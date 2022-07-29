@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text{
+            size: B4;
+        }
+        .button{
+            width: 60px;
+            height: 40px;
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+<h3></h3>
+<button class="button" type="button" onclick="lesson1()">Bài 1</button>
+<button class="button" type="button" onclick="Bai2()">Bài 2</button>
+<button class="button" type="button" onclick="Bai3()">Bài 3</button>
+<button class="button" type="button" onclick="Bai4()">Bài 4</button>
+<button class="button" type="button" onclick="Bai5()">Bài 5</button>
+<button class="button" type="button" onclick="Bai6()">Bài 6</button>
+<button class="button" type="button" onclick="Bai7()">Bài 7</button>
+<button class="button" type="button" onclick="Bai8()">Bài 8</button>
+<button class="button" type="button" onclick="Bai9()">Bài 9</button> <br>
+<p>Bài 1:Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10. </p>
+<p>Bài 2: Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</p>
+<p>Bài 3: Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</p>
+<p>Bài 4: Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.</p>
+<p>Bài 5: Viết chương trình đếm số nguyên âm trong một chuỗi</p>
+<p>Bài 6: Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".</p>
+<p>Bài 7:Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)</p>
+<p>Bài 8: Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</p>
+<p>Bài 9: Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên. Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.</p>
+
+
+
+
+<script>
+    function lesson1() {
+        let arr = [4, 17, 6, 39, -12, 25, 1, 0, -17, 5];
+        document.write("Mảng khởi tạo :"+ arr + "<br>");
+        for(let i =0; i < arr.length; i++){
+            if(arr[i] >=10){
+                document.write(arr[i] + ",");
+            }
+        }
+    }
+</script>
+</html>
+</body>

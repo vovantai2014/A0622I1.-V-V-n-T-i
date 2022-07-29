@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button{
+            width: 75px;
+            height: 25px;
+            border-color: aqua;
+        }
+        .text{
+            text-align: center;
+            color: blue;
+            size: auto;
+        }
+    </style>
+</head>
+<h5 class="text"> BÀI TẬP CẤU TRÚC VÒNG LẶP</h5><br>
+<button class="button" type="button" onclick="lessonOne()"> Lesson 1</button>
+<button class="button" type="button" onclick="lessonTwo()"> Lesson 2</button>
+<button class="button" type="button" onclick="lessonThree()"> Lesson 3</button>
+<button class="button" type="button" onclick="lessonFour()"> Lesson 4</button><br><br>
+<button class="button" type="button" onclick="lessonFive()"> Lesson 5</button>
+<button class="button" type="button" onclick="lessonSix()"> Lesson 6</button>
+<button class="button" type="button" onclick="lessonSeven()"> Lesson 7</button>
+<button class="button" type="button" onclick="lessonEight()"> Lesson 8</button>
+<body>
+<script>
+
+    function lessonOne() {
+        let i;
+        for(i = 1; i <= 100; i ++){
+            document.write(i + "<br>");
+            if(i==99){
+                document.write("Đã hoàn thành");
+            }
+        }
+    }
+    function lessonTwo() {
+        let temperature = parseInt(prompt("Nhập vào nhiệt độ"));
+        while (temperature < 20 || temperature >100) {
+            if (temperature < 20) {
+                alert(" Hãy tăng nhiệt độ lên !");
+                temperature = parseInt(prompt(" Nhập vào nhiệt độ"));
+            } else if (temperature > 100) {
+                alert("Hãy giảm nhiệt độ xuống !");
+                temperature = parseInt(prompt("Nhập vào nhiệt độ"));
+            } else {
+                alert("Nhiệt độ ở mức ổn định");
+            }
+        }
+    }
+
+    function lessonThree() {
+        let a = 0;
+        let b = 1;
+        let fiBo;
+        for(let i = 0; i< 20; i++){
+            fiBo = a + b;
+            document.write(a + "<br>");
+            a = b;
+            b = fiBo;
+            }
+        }
+
+    function lessonFour() {
+        let a = 0;
+        let b = 1;
+        let fiBo;
+        for(let i = 0; i< 20; i++){
+            fiBo = a + b;
+            document.write(a + "<br>");
+            a = b;
+            b = fiBo;
+            if (a % 5 == 0) {
+                document.write("Số đầu tiên trong dãy số Fibonacci chia hết cho 5 là: " + a);
+                break;
+            }
+        }
+    }
+
+    function lessonFive() {
+        let a = 0;
+        let b = 1
+        let fiBo;
+        let sum = 0;
+        let i;
+        for(i = 0; i <20; i ++){
+            fiBo = a + b;
+            document.write(a + "<br>");
+            a = b;
+            b = fiBo;
+            sum = a + b + fiBo;
+        }
+        document.write("Tổng 20 số đầu tiên trong dãy Fibonacci là: " +sum);
+    }
+
+    function lessonSix() {
+        let tong = 0;
+        let count = 0;
+        let i = 1;
+        while (count <= 30) {
+            if (i % 7 == 0) {
+                tong += i;
+                count++;
+                document.write(i + "<br>");
+            }
+            i++;
+        }
+        document.write("Tổng của 20 số tự nhiên đầu tiên chia hết cho 7 là :" + tong);
+    }
+
+        function lessonSeven() {
+        let i;
+        for (i = 1; 1 <=100; i ++) {
+            if(i%3 == 0) {
+                document.write('Fizz');
+            }
+            else if(i%5 ==0) {
+                document.write('Buzz');
+            }
+            else if(i%3 == 0 && i%5 ==0) {
+                document.write('Fizz Buzz');
+            }else{
+
+            document.write(i + '<br>');
+
+            }
+        }
+    }
+</script>
+</body>
+</html>

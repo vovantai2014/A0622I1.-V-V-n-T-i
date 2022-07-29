@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="giaithua()"> Tính giai thừa</button>
+<script>
+    function giaithua() {
+        let n = parseInt(prompt("Nhập vào số nguyên muốn tính giai thừa"));
+        let factorial = 1;
+        if(n==0 || n==1){
+            factorial = 1;
+            document.write(+n + "!" + "=" +factorial);
+        }else {
+            for( let i = 1; i <= n; i++){
+                factorial *= i;
+            }
+            document.write(+n + "!" + "=" +factorial);
+        }
+
+
+    }
+</script>
+</body>
+</html>

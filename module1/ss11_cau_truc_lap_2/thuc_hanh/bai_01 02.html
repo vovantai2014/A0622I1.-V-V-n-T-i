@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> BẢNG CỬU CHƯƠNG</title>
+    <style>
+        .border{
+            padding: 3;
+
+        }
+    </style>
+</head>
+<body>
+
+<button type="button" onclick="fibonacci()"> (B1) Print Fibonacci</button>
+<button type="button" onclick="factorial()"> (B2) Factorial</button>
+<button type="button" onclick="triangle()"> (B3)Print Triangle</button>
+<button type="button" onclick="rectangle1()">(B4) Print Rectangle 1</button>
+<button type="button" onclick="rectangle()"> Print Rectangle</button>
+<button type="button" onclick="laikep()"> (B5)Tính Lãi Kép</button>
+<button type="button" onclick="hear()"> (6)Draw Hear</button>
+<button type="button" onclick="multiplicationTable()">Multiplication Table</button>
+
+<script>
+    function multiplicationTable(){
+        document.write("<table border=1 width=100%>")
+        for(let i=1;i<=9;i++) {
+            document.write("<tr>")
+            for (let j = 2; j <= 9; j++) {
+            document.write("<td>" + j + "x" + i + "=" + (j * i));
+        }
+            document.write("</td>");
+            document.write("</tr>");
+        }
+        document.write("</tr></table>");
+    }
+
+    function fibonacci() {
+        let a = 0;
+        let b = 1;
+        let fiBo;
+        for(let i = 0; i<20; i++){
+            fiBo = a + b;
+            document.write( a + "<br>");
+            a = b;
+            b = fiBo;
+        }
+        document.write("// 20 số đầu tiên trong dãy Fibonacci //");
+    }
+    
+    function triangle() {
+        for(let i = 0; i<=10; i++){
+            for(let j=0; j<=i; j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+    }
+
+    function rectangle1() {
+        for(let i = 0; i<=5; i++){
+            for(let j = 0; j<=20; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }
+
+    function rectangle()
+    {
+        let height = parseInt(prompt(" Nhập chiều cao của hình chữ nhật"));
+        let width = parseInt(prompt("Nhập chiều rộng của hình chữ nhật"));
+        for(let i = 0; i <= height; i++)
+        {
+            for(let j = 0; j <= width; j++) {
+                if (i == 0 || j == 0 || i == height ||j == width) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp");
+
+                }
+            }
+                   document.write("<br>");
+        }
+
+    }
+
+
+    function factorial() {
+    let n = parseInt(prompt("Nhập vào số nguyên dương"));
+    let factorial = 1;
+        for(let i = 1; i <= n; i ++){
+            factorial = factorial * i;
+        }
+        document.write(+n+ "!" + "=" + factorial);
+    }
+
+    // function laikep() {
+    //     let tienVon = Number(prompt("Số tiền gốc ban đầu"));
+    //     let laiSuat = Number(prompt("Lãi suất hàng tháng"));
+    //     let soThangGui = Number(prompt("Số tháng gửi"));
+    //     let tongTienGui;
+    //     tongTienGui = (tienVon + (Math.pow((1+laiSuat/100/12),(soThangGui/12))));
+    //     alert("Tông số tiền sau" + soThangGui +"tháng gửi"+ "=" +tongTienGui);
+    // }
+
+    function hear() {
+        for (let i = 1; i <= 7; i ++ ){
+            for(let j = 1; j <= 7; j ++){
+                if((i==1) && (j ==1 || j==3 || j==4 || j==5 || j==7 )
+                    || (i==2 && j==4)
+                    || (i==5)&&(j==1||j==7)
+                    || (i==6)&&(j==1||j==2||j==6||j==7)
+                    || (i==7)&&(j==1||j==2||j==3||j==5||j==6||j==7)){
+                    document.write(" ");
+                }else{
+                    document.write("*");
+                }
+
+            }
+            document.write("<br>");
+        }
+
+
+    }
+</script>
+</body>
+</html>

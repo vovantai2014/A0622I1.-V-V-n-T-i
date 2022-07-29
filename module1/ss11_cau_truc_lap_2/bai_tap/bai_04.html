@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="bai4()">Bài 4</button>
+<script>
+    function bai4() {
+        let a = 0;
+        let b = 1;
+        let fiBo;
+        for (let i = 0; i < 20; i++) {
+            fiBo = a + b;
+            document.write(a + "<br>");
+            a = b;
+            b = fiBo;
+            if (a % 5 == 0) {
+                document.write("Số đầu tiên chiwa hết cho 5 là: " + a);
+                break;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

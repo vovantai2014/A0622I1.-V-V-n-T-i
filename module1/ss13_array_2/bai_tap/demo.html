@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // 1 - Hàm MAP: Dùng để lặp qua các phần tử của mảng và thay đổi các giá trị trong mảng //
+    // let number = [5, 7, 9, 2, 8];
+    // document.write("number ="+"["+number+"]"+"<br>");
+    // let new_number = number.map(function (item) {
+    //     return item * 2;
+    // })
+    //     document.write("Mảng mới đươc trả về: new_number = "+ "["+new_number+"]");
+    // -------------------------------//---------------------------------------------
+
+
+
+    // Dùng vòng lặp for để thay cho hàm MAP
+    // let numbers = [3, -2, 5, 7];
+    // for(let i = 0; i < numbers.length; i ++){
+    // numbers[i] = numbers[i] * 2;}
+    // document.write("Mảng mới được trả về numbers ="+ "[" + numbers +"]");
+    //-----------------------------------------------//-------------------------
+
+
+
+// Khai báo mảng 10 phần tử. Tìm GTLN trong mảng và vị trí index của GTLN
+    // let arr = [-2, 4, 8, 27, -33, 45, 32, 8, 0, 4];
+    // let max = arr[0];
+    // let max_index = 0;
+    // for(let i = 0; i< arr.length; i ++){
+    //     if(max < arr[i]){
+    //         max = arr[i];
+    //         max_index = i;
+    //     }
+    // }
+    // document.write("Mảng được khai báo là arr = ["+arr+"]"+"<br>");
+    // document.write("Giá trị lớn nhất của mảng arr là :" +max + "<br>");
+    // document.write(" Vị trí - index của giá trị lớn nhất trong mảng arr là :"+ max_index + "<br>");
+//-----------------------------------------------//--------------------------------------------------------------------
+
+
+
+    // Khai báo mảng 10 phần tử. Tìm GTNN trong mảng và vị trí index của GTNN
+    // let arr = [-2, 4, 8, 27, -33, 45, 32, 8, 0, 4];
+    // let min = arr[0];
+    // let min_index = 0;
+    // for(let i = 0; i< arr.length; i ++){
+    //     if(min > arr[i]){
+    //         min = arr[i];
+    //         min_index = i;
+    //     }
+    // }
+    // document.write("Mảng được khai báo là arr = ["+arr+"]"+"<br>");
+    // document.write("GTNN của mảng arr là :" +min + "<br>");
+    // document.write(" Vị trí - index của GTNN trong mảng arr là :"+ min_index + "<br>");
+    //--------------------------------------------------//-----------------------------------------------------------
+
+
+    // let array = [9, -23, 35, 9, 12, 44, -23];
+    // let max = array[0];
+    // let sum = 0;
+    // let average = 0;
+    // let heightArr = 0;
+    // for(let i = 0; i < array.length; i ++){
+    //     if(max < array[i]){
+    //         max = array[i];
+    //         heightArr = array.length;
+    //     }
+    // }
+    // document.write("1. Mảng được khởi tạo là : array ="+ "[" + array +"]" + "<br>");
+    // document.write("2. Giá trị lớn nhất trong mảng: max(array) :"+ max +"<br>");
+    //
+    // array.forEach(function (item) {
+    //     sum = sum + item;
+    //     average = sum/array.length;
+    // })
+    // document.write("3. Tổng các phần tử trong mảng: sum(array)"+ "="+sum +"<br>");
+    // document.write("4. Độ dài của mảng khởi tạo: array_height :" +heightArr+"<br>");
+    // document.write("5. Giá trịnh trung bình các phần từ trong mảng : average(array) :"+"=" + average);
+//---------------------------------------------------------//--------------------------------------------------
+
+
+    // let arr = [8, 6, -4, "sinh viên", -23, "true"];
+    // // alert(arr);
+    // let new_arr;
+    // new_arr = arr.reverse();
+    // alert(new_arr);
+    //-----------------------------------------------//-----------------------------------------
+
+    let arr = [9, -13, -4, 12, 2, -2, 7, -100, -22, 3];
+    let count = 0;
+    let new_arr;
+    for(let i = 0; i< arr.length; i ++){
+        if(arr[i] <0){
+            new_arr = arr[i];
+            document.write(new_arr + ",");
+            count += 1;
+        }
+    }
+    document.write(new_arr + "," + "<br>");
+    document.write(count + "<br>");
+
+
+
+
+</script>
+</body>
+</html>
