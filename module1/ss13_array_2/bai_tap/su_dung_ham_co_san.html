@@ -17,11 +17,25 @@
     }
 
     function bai2() {
-        let value = parseInt(prompt("Nhập vào sô có 4 chữ số trở lên:"));
-        value.join("-");
-        alert(value);
+        let number = prompt('Nhập vào dãy số :');
+        let str = number.toString();
+        let result = [str[0]];
 
+        for(let i = 1; i < str.length; i ++)
+        {
+            if((str[i-1]%2 === 0) && (str[i]%2 === 0))
+            {
+                result.push('-', str[i]);
+            }
+            else
+            {
+                result.push(str[i]);
+            }
+        }
+        alert(result.join(''));
     }
+    
+
 </SCRIPT>
 
 </body>

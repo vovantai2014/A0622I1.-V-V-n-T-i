@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <STYLE>
+        .button{
+            height: 40px;
+            width: 60px;
+            background-color: aquamarine;
+        }
+    </STYLE>
+</head>
+<body>
+<h3>BÀI TẬP MẢNG -02</h3>
+<button class="button" type="button" onclick="lesson1()">Bài 1</button>
+<button class="button" type="button" onclick="lesson2()">Bài 2</button>
+<button class="button" type="button" onclick="lesson3()">Bài 3</button>
+<button class="button" type="button" onclick="lesson3_1()">Bài 3-1</button>
+<button class="button" type="button" onclick="lesson4()">Bài 4</button>
+<button class="button" type="button" onclick="lesson5()">Bài 5</button>
+<button class="button" type="button" onclick="lesson6()">Bài 6</button>
+<script>
+// Bài 1
+    function lesson1() {
+        let array = [
+            [1,2,1,13],
+            [8,11,9,4],
+            [7,0,7,27],
+            [7,4,28,14],
+            [3,10,26,7]
+        ];
+        for(let i=0; i<array.length; i++){
+            for(let j=0; j<array[i].length; j++){
+                document.write("["+i+"]"+"["+j+"] ="+array[i][j] + "</br>");
+            }
+        }
+    }
+
+//Bài 2 In mảng đảo ngược
+    function lesson2() {
+        let array = ["c", "s", "c", "2", "6", "1"];
+        alert("Mảng khởi tạo ["+array+"]");
+        alert("Kết quả : ["+array.reverse().join('')+"]");
+    }
+
+// Bài 3: Đếm số ký tự trong mảng đa chiều
+
+    function lesson3() {
+        let array = [
+            [1, 'Hà Nội'],
+            [true, -2, 'Đà Nẵng', 0, 'Codegym'],
+            [3, false, -100, 'e'],
+        ];
+        document.write("[ " + array+ " ]" +"<br>");
+        let count = 0;
+        for(let i = 0; i < array.length; i++){
+            for(let j =0; j< array[i].length; j ++){
+                count++;
+            }
+        }
+       document.write("Tổng số kí tự trong mảng đa chiều đã khai báo :" +count);
+
+    }
+
+// Bài 3-1: Đếm số kí tự trong mảng một chiều
+    function lesson3_1() {
+        let array = ['Hà Nội', 'Tp. HCM', true, false, 0, 1, 2, 3, 4,];
+        let index = 0;
+        for(let i = 0; i < array.length; i ++){
+            //document.write("Số lượng kí tự trong mảng đã khai báo :" + array.length);
+        }
+        document.write("Mảng 1 chiều đã khai báo array = [" + array + "]" + "<br>");
+        document.write("Số lượng kí tự trong mảng đã khai báo :" + array.length);
+
+    }
+
+// Bài 4: Đếm số từ có trong chuỗi
+    function lesson4() {
+        let str = prompt("Nhập vào một chuỗi");
+        let count = [];
+        for(let i=0; i<str.length; i ++){
+            count.push(i);
+        }
+        alert("length :" +count.length);
+    }
+//         function lesson4() {
+//             let str = prompt("Nhập vào chuỗi");
+//             let count = str.length;
+//             alert("length :"+ count);
+//         }
+
+
+
+// Bài 5: Nhập vào 2 chuỗi, kiểm tra xem 2 chuỗi có giống nhau không?
+    function lesson5() {
+        let strOne = prompt("Nhập vào chuỗi thứ nhất !");
+        let strTwo = prompt("Nhập vào chuỗi thứ hai !");
+        let x = [];
+        let y = [];
+        x= strOne;
+        y = strTwo;
+        let check;
+        if(x.length !== y.length){
+            check = false;
+        }else {
+            for(let i = 0; i< x.length; i++){
+                if(x[i] !== y[i] ){
+                    check = false;
+                    break;
+                }
+                    check = true;
+            }
+        }
+        if (check == true){
+            alert("Hai chuỗi nhập vào giống nhau");
+        }else {
+            alert("Hai chuỗi nhập vào khác nhau");
+        }
+    }
+
+//Bài 6:
+        function lesson6() {
+        let arrayCharacter = [];
+        for( let i = 0; i <5; i++){
+            arrayCharacter.push(prompt("Nhập phần tử thứ " + (i+1)));
+        }
+        alert("Mảng được khởi tạo ["+ arrayCharacter + "]");
+        for(let i = 0; i < arrayCharacter.length; i++){
+            if(arrayCharacter[i] === "-"){
+              arrayCharacter[i] = "_";
+            }
+        }
+            alert("Mảng sau khi thay thế : [" + arrayCharacter +"]");
+        }
+
+</script>
+</body>
+</html>

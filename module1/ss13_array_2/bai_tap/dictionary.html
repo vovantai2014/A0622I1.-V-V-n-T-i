@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="txt">
+
+<button type="button" id="btn" onclick="translate1()"> Search </button>
+<p id="ht"></p>
+<script>
+
+    function translate1() {
+        let a = ['hello', 'goodbye', 'thank you', 'eat', 'drink'];
+        let b = ['xin chào', 'tạm biệt', 'cảm ơn', 'ăn', 'uống'];
+        let tam = document.getElementById("txt").value;
+        for (let i = 0; i < a.length; i++) {
+            if (tam === a[i]) {
+                document.getElementById("ht").innerHTML = b[i];
+                break;
+            } else {
+                document.getElementById("ht").innerHTML = "Không tìm thấy";
+            }
+        }
+    }
+        // let trans = prompt("Nhập vào từ tiếng Anh muốn tìm kiếm");
+        // for (let i = 0; i< a.length; i++){
+        //     if(trans === a[i]){
+        //         alert(b[i]);
+        //     }else{
+        //         alert("Không tìm thấy");
+        //     }
+</script>
+</body>
+</html>
