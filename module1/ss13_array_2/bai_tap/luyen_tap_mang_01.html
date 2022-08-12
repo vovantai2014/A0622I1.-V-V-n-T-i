@@ -47,31 +47,31 @@
 // Bài 2: Khởi tạo mảng, tìm max và max_index
     function lesson2() {
         let array = [12, -33, 42, 88, -10, 9, 0, -12, 67, 24];
-        let max =0;
-        let max_index=0;
+        let max =array[0];
+        let maxIndex=0;
         document.write("Mảng vừa tạo là : ["+array.join(", ") +"]"+"<br>");
         for(let i=0; i < array.length; i++){
             if(max<array[i]){
                 max = array[i];
-                max_index = i;
+                maxIndex = i;
             }
         }
             document.write("Giá trị lớn nhất trong mảng max :"+ max + "<br>");
-            document.write("Vị trí của giá trị lớn nhất max_index :"+ max_index);
+            document.write("Vị trí của giá trị lớn nhất maxIndex :"+ maxIndex);
     }
 
 // Bài 3: Tìm giá trị max và giá trị trung bình (average) của các phần tử trong mảng
     function lesson3(){
         let array = [9, 12, -36, 25, -10, 9, 0, -37, 67, 24];
         let max =0;
-        let max_index=0;
+        let maxIndex=0;
         let sum = 0;
         let average;
         document.write("Mảng vừa tạo là : ["+array.join(", ") +"]"+"<br>");
         for(let i=0; i<array.length;i++){
             if(max<array[i]){
                 max = array[i];
-                max_index = i;
+                maxIndex = i;
             }
         }
         array.forEach(function (item) {
@@ -79,8 +79,8 @@
             average = sum/array.length;
         })
         document.write("Giá trị lớn nhất trong mảng Max :"+ max + "<br>");
-        // document.write("Max_index :"+ max_index +"<br>");
-        // document.write("Sum :"+sum + "<br>");
+        document.write("Max_index :"+ max_index +"<br>");
+        document.write("Sum :"+sum + "<br>");
         document.write("Giá trị trung bình của mảng Average :" + average +"<br>");
     }
 
@@ -89,8 +89,8 @@
     function lesson4() {
         let array = [4, 6, 2, 8, 9, 1];
         document.write("Mảng khởi tạo array = [" + array.join(", ")+ "]" +"<br>");
-        let new_array;
-        new_array = array.reverse();
+        let newArray;
+        newArray = array.reverse();
        document.write("Mảng đảo ngươc new_array = [" + new_array.join(", ") + "]");
     }
 
@@ -98,9 +98,9 @@
 // Bài 4-1: Đào ngược mảng bằng vòng lặp for
     function lesson4_1() {
         let array = [4, 6, 2, 8, 9, 1];
-        let new_array = [];
+        let newArray = [];
         for(let i = array.length - 1; i >=0; i--){
-            new_array.push(array[i]);
+            newArray.push(array[i]);
         }
         document.write("Mảng khởi tạo array = [" + array.join(", ")+ "]" + "<br>");
         document.write("Mảng đảo ngược new_array = [" + new_array.join(", ") + "]");
@@ -110,11 +110,11 @@
     function lesson5() {
         let array = [-1, 4, -28, 7, 6, -2, -20, -22, 0, 28];
         let count = 0;
-        let new_array = [];
+        let newArray = [];
         document.write("Mảng khởi tạo array = [" + array.join(", ")+  "]" +"<br>");
         for(let i = 0; i < array.length; i ++){
             if(array[i] <0){
-               new_array.push(array[i]);
+               newArray.push(array[i]);
                count +=1;
             }
         }
@@ -184,16 +184,16 @@
 
     function lesson9() {
         let array = ["Hello", 5, 9, -12, true, 0, "7", -8, 100, 7];
-        let new_array = [0, "Hà Nội", 7, -23, 67, false, "Codegym", 100, "0", 2];
+        let newArray = [0, "Hà Nội", 7, -23, 67, false, "Codegym", 100, "0", 2];
         let arrayAdd = [];
         arrayAdd = array.concat(new_array);
         document.write("Mảng thứ nhất khởi tạo array = ["+array.join(", ")+"]" +"<br>");
-        document.write("Mảng thứ hai khởi tạo new_array = ["+ new_array.join(", ")+ "]"+ "<br>");
+        document.write("Mảng thứ hai khởi tạo new_array = ["+ newArray.join(", ")+ "]"+ "<br>");
         document.write("Kết quả nối 2 mảng: arrayAdd = ["+arrayAdd.join(", ")+"]");
 
     }
 
 
 </script>
-</html>
 </body>
+</html>

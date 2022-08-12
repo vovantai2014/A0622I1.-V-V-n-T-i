@@ -113,10 +113,63 @@
 // }
 //
 //     alert(array);
-    let x = [1,2,4];
-    console.log(x);
+//     let x = [1,2,4];
+//     console.log(x);
+//     let num = [48, 75, 92, 61, 54, 83, 76];
+//     let sum = 0;
+//     for (let i = 0; i < num.length;i++){
+//         sum += num[i];
+//     }
+//         alert(sum);
 
+    // let arr = [1,2,4,3,1,6];
+    //     // let a = arr.pop();
+    //     arr.indexOf(2);
+    //     // let a = arr.push(7);
+    //     alert(arr);
+    //     // alert(a);
 
+    // function sumArr(array) {
+    //     let sum = 0;
+    //     for(let i = 0; i<array.length; i++){
+    //         sum += array[i];
+    //     }
+    //     return sum;
+    // }
+    // let n = parseInt(prompt("Nhập"));
+    // let newArray = [];
+    // for(let i=0; i<n; i++){
+    //     newArray.push(parseInt(prompt("Nhập")));
+    //
+    // }
+    // alert(newArray);
+    // alert(sumArr(newArray));
+    
+    // function sortArray(array) {
+    //     let temp;
+    //     for(let i = 0; i< array.length - 1; i++){
+    //         for(let j=i+1; j<array.length; j++){
+    //             if(array[i]>array[j]){
+    //                 temp = array[i];
+    //                 array[i] = array[j];
+    //                 array[j] = temp;
+    //             }
+    //         }
+    //     }
+    // }
+    // let newArray = [-1, -10, 3];
+    // console.log(sortArray(newArray));
+    function compareNumbers(a,b) {
+        return a - b;
+    }
+    let n = parseInt(prompt("Nhập"));
+    let newArray = [];
+    for(let i=0; i<n; i++){
+        newArray.push(parseInt(prompt("Nhập")));
+
+    }
+    alert(newArray);
+    alert(newArray.sort(compareNumbers));
 </script>
 </body>
 </html>

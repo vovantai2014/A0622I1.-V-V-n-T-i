@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reverseArray(arr) {
+        for (let i = 0; i < arr.length/2; i++) {
+            let temp;
+            temp = arr[i];
+            arr[i]= arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+    }
+    let n = +prompt("Nhập số lượng phần tử của mảng :");
+    let newArray = [];
+    for(let i=0; i < n; i++){
+        newArray.push(prompt("Nhập phần tử thứ" + (i+1)));
+    }
+    alert("Mảng khởi tạo ["+newArray+"]");
+    reverseArray(newArray);
+    alert("Kết quả : [" +newArray +"]");
+
+</script>
+</body>
+</html>

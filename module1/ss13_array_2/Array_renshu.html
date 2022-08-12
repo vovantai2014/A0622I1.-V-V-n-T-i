@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    .button{
+        width: 60px;
+        height: 45px;
+    }
+</style>
+</head>
+<body>
+<button class="button" type="button" onclick="bai1()">Bài 1</button>
+<button class="button" type="button" onclick="bai2()">Bài 2</button>
+<button class="button" type="button" onclick="bai3()">Bài 3</button>
+<button class="button" type="button" onclick="bai4()">Bài 4</button>
+<button class="button" type="button" onclick="bai5()">Bài 5</button>
+<button class="button" type="button" onclick="bai6()">Bài 6</button>
+<button class="button" type="button" onclick="bai7()">Bài 7</button>
+<button class="button" type="button" onclick="bai8()">Bài 8</button>
+<button class="button" type="button" onclick="bai9()">Bài 9</button>
+<button class="button" type="button" onclick="bai10()">Bài 10</button>
+<button class="button" type="button" onclick="bai11()">Bài 11</button>
+<button class="button" type="button" onclick="bai12()">Bài 12</button>
+</body>
+<script>
+    function bai1() {
+        let array = [];
+        let n = parseInt(prompt("Nhập n số vào mảng"));
+        for (let i=0; i<n; i++){
+            array.push(prompt("Nhập phân từ thứ " + (i+1)));
+        }
+        alert("Mảng khởi tạo array = ["+ array.join(", ")+ "]");
+        let first = 0;
+        let last = array.length -1;
+        while(first<last){
+            let b = array[first];
+            array[first] = array[last];
+            array[last] = b;
+            first ++;
+            last --;
+        }
+        alert("Kết quả: array = [" +array.join(", ")+ "]" );
+    }
+
+    function bai2() {
+        let array = [];
+        let n = parseInt(prompt(" Nhập n số vào mảng"));
+        for(let i = 0; i< n; i++){
+            array.push(prompt("Nhập phần tư thứ "+(i+1)));
+        }
+        alert(array);
+        let temp;
+        for(let i = 0; i< array.length - 1; i++){
+            for(let j=i+1; j<array.length; j++){
+                if(array[i]<array[j]){
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        alert(array);
+    }
+
+    function bai4() {
+        let array = [];
+        let n = parseInt(prompt("Nhập giá trị"));
+        for(let i = 0; i<n; i++){
+            array.push(+prompt("Nhập các phàn tử"));
+        }
+        alert(array);
+        let sum = 0;
+        let x = [];
+        for(let i = 0; i < array.length; i++){
+            if(array[i]%2 !==0){
+                x.push(array[i]);
+                sum += array[i];
+            }
+        }
+        alert(x);
+        alert(sum);
+    }
+
+    function bai5() {
+        let array = [];
+        let n = parseInt(prompt("Nhaapj"));
+        for (let i = 0; i<n; i++){
+            array.push(prompt("Nhap "));
+        }
+        alert(array);
+        let index = parseInt(prompt("Vi tri muon xoa"));
+        for(let i=0; i<array.length; i++){
+            array.splice(index,1);
+        }
+        n = n - 1;
+        alert("Mang sau khi xoa" + array);
+    }
+
+
+</script>
+</html>

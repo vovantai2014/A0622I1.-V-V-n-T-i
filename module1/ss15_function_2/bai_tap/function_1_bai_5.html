@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhập tên ngôi sao");
+    let array = ["Polaris", "Aldebaran","Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let newArray = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    function checkStar() {
+        for(let i = 0; i< array.length; i++){
+            for( let j = 0; j<array[i].length; j++){
+                if(array[i] === input){
+                    return alert("Chòm sao tương ứng :" + " " + newArray[i]);
+                }
+            }
+        }
+        return alert("Không tim thấy chòm sao tương ứng");
+    }
+    checkStar();
+</script>
+</body>
+</html>

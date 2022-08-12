@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkMin() {
+        let min = a;
+        if( min > b && b<c){
+            min = b;
+        }else{
+            min = c;
+        }
+        return min;
+    }
+    let a = +prompt(" Input number 1:");
+    let b = +prompt(" Input number 2:");
+    let c = +prompt(" Input number 3:");
+    checkMin(a,b,c);
+    alert("Min :"+ checkMin());
+</script>
+</body>
+</html>

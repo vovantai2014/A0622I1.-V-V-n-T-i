@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, tr, td{
+            border-top:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        tr, td{
+            text-align:left;
+            padding:10px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="txt"/>
+<button type="button" onclick="addElement()">Add</button>
+<button type="button" onclick="displayElement()">Display</button>
+
+
+<p id="demo"/>
+<script>
+    let x = 0;
+    let array = Array();
+    function addElement() {
+        array[x] = document.getElementById("txt").value;
+        alert("Muốn thêm sản phẩm " +array[x]);
+        x++;
+        document.getElementById("txt").value = "";
+    }
+    function displayElement() {
+        let tableStr = "<table>";
+        for (let i = 0; i < array.length; i++) {
+            tableStr += "<tr>";
+            tableStr += "<td>" + (i+1) + "</td>";
+            tableStr += "<td>" + array[i] + "</td>";
+            tableStr += "<td><input type='button' value='Edit' onclick='edit(" + i + ")' /></td>";
+            tableStr += "<td><button type='button' onclick='delete(i)'/>Delete</td>";
+            tableStr += "</tr>";
+        }
+        tableStr += "</table>";
+        document.getElementById("demo").innerHTML = tableStr;
+        
+      function edit(i) {
+
+      }
+    }
+    // function displayElement() {
+    // let product = "<table>";
+    // for( x in array){
+    //     product = product + "<tr><td>" +array[x] +"</td></tr>";
+    // }
+    //     product = product +"</table>";
+    //     document.getElementById("demo").innerHTML = product;
+    // }
+    // let array = new Array(10);
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i] = new Array(10)
+    //     for (let j = 0; j < array[i].length; j++) {
+    //         array[i][j] = "1"
+    //     }
+    // }
+    // function displayElement() {
+    // let tableStr = "<table border='1'>";
+    // for(let i = 0; i< array.length; i++){
+    //     tableStr += "<tr>";
+    //     for(let j = 0; j < array[i].length; j++){
+    //         tableStr += "<td>" + array[i][j] + "</td>";
+    //     }
+    //     tableStr += "</tr>";
+    // }
+    // tableStr += "</table>";
+    // document.getElementById("demo").innerHTML = tableStr;
+    // }
+
+
+</script>
+</body>
+</html>

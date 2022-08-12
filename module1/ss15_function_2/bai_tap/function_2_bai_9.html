@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//     let n = prompt("Nhập số kí tự của mang");
+//     let array = [];
+//     for(let i = 0; i< n; i++){
+//         array.push(prompt("nhập kí tự thứ " + (i+1)));
+//    }
+//     alert(array);
+// function checkCharacterInArray(char) {
+//     let count = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] ==char) {
+//             count += 1;
+//         }
+//     }
+//     if(count != 0){
+//         return count;
+//     }
+//     else{
+//         return -1;
+//     }
+// }
+//     let x = prompt("Nhập vao kí tự muốn check");
+//     checkCharacterInArray(x);
+//     alert("có kí tự "+ x + "trong mảng" + "số lân xuất hiên " + checkCharacterInArray(x));
+
+function checkCharacterInArray(array, a) {
+    let count = 0;
+    for(let i = 0; i< array.length; i++){
+        if(array[i] == a){
+            count += 1;
+        }
+    }
+    if(count > 0){
+        return alert("số lần xuat hien cua " + " " + a + " " + "la " +count + " " + "lan");
+
+    }else {
+        return alert("-1");
+    }
+}
+    let n = prompt("Nhập số kí tự của mang");
+    let arr = [];
+    for(let i = 0; i< n; i++){
+        arr.push(prompt("nhập kí tự thứ " + (i+1)));
+   }
+    alert(arr);
+    let x = prompt("Nhập vao kí tự muốn check");
+    checkCharacterInArray(arr,x);
+</script>
+</body>
+</html>
