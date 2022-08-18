@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Remote {
+        constructor(id) {
+            this.id = id;
+        }
+        getId(){
+            return this.id;
+        }
+        setId(newId){
+            this.id = newId;
+        }
+        channelSwitch(channel){
+            console.log("TV da chuyen sang  kenh " +channel);
+        }
+        volumeSwitch(volume){
+            console.log("Am luong " +volume);
+        }
+        increVolume(tivi){
+           let volume = tivi.getCurrentVolume();
+           volume += 2;
+           tivi.setCurrentVolume(volume);
+           console.log("Âm lượng TV tăng lên "+volume);
+        }
+
+    }
+    class Tivi{
+        constructor(currentChannel,currentVolume,status) {
+            this.currentChannel = currentChannel;
+            this.currentVolume = currentVolume;
+            this.status = status;
+        }
+        getCurrentChannel(){
+            return this.currentChannel;
+        }
+        setCurrentChannel(newChannel){
+            this.currentChannel = newChannel;
+        }
+        getCurrentVolume(){
+            return this.currentVolume;
+        }
+        setCurrentVolume(newVolume){
+            this.currentVolume = newVolume;
+        }
+        getStatus(){
+            return this.status;
+        }
+        setStatus(newStatus){
+            this.status = newStatus;
+        }
+        conectToTivi(){
+            if(this.status){
+                console.log("TV đang ở kênh :" +this.currentChannel + "; " + " Âm lượng :" + this.currentVolume);
+            }
+        }
+        off(){
+            console.log("Tivi đã tắt");
+        }
+    }
+    let tV = new Tivi(1,25,true);
+    let remote = new Remote("mega");
+    tV.conectToTivi(remote);
+    remote.channelSwitch(7);
+    remote.channelSwitch(3);
+    remote.increVolume(tV);
+    tV.off();
+
+</script>
+</body>
+</html>

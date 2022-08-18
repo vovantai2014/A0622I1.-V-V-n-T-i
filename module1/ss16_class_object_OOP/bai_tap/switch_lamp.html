@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch_Lamp</title>
+</head>
+<body>
+<script>
+    class SwitchButton{
+        constructor(status,lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+        connectToLamp(ElectricLamp){
+            if(this.status){
+                this.switchOn();
+            }else{
+                this.switchOff();
+            }
+        }
+        getStatus(){
+            return this.status;
+        }
+        setStatus(status){
+            this.status = status;
+        }
+        getLamp(){
+            return this.lamp;
+        }
+        setLamp(lamp){
+            this.lamp = lamp;
+        }
+        switchOff(){
+            console.log("Đèn tắt");
+            this.status = true;
+        }
+        switchOn(){
+            console.log("Đèn bật");
+            this.status = false;
+        }
+    }
+    class ElectricLamp{
+        constructor(status) {
+            this.status = status;
+        }
+        getStatus(){
+            return this.status;
+        }
+        setStatus(status){
+            this.status = status;
+        }
+        turnOn(){
+            console.log("Den Bat");
+        }
+        turnOff(){
+            console.log("Den Tat");
+        }
+    }
+    let lamp1 = new ElectricLamp(true);
+    let switch1 = new SwitchButton(true,lamp1);
+    // switch1.connectToLamp(lamp1);
+    for (let i = 0; i < 10 ; i++) {
+        switch1.connectToLamp(lamp1);
+    }
+
+</script>
+</body>
+</html>
